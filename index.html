@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <!-- Clock display section -->
+    <div class="clock">
+        <div id="time"></div>
+    </div>
+    <!-- Alarm input section -->
+    <div class="alarm-section">
+        <h2>Set Alarm</h2>
+        <!-- Input fields for hours, minutes, and seconds -->
+        <input type="number" id="alarmHours" placeholder="Hours">
+        <input type="number" id="alarmMinutes" placeholder="Minutes">
+        <input type="number" id="alarmSeconds" placeholder="Seconds">
+        <!-- Dropdown for AM/PM selection -->
+        <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <!-- Button to set the alarm -->
+        <button id="setAlarm">Set Alarm</button>
+    </div>
+    <!-- Alarms list section -->
+    <div class="alarms">
+        <h2>Alarms List</h2>
+        <!-- Unordered list to display alarms -->
+        <ul id="alarmList"></ul>
+    </div>
+    <!-- JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
